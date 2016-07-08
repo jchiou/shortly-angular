@@ -12,9 +12,9 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser. order matters!
     files: [
       // angular source
-      'client/lib/angular/angular.js',
-      'client/lib/angular-route/angular-route.js',
-      'client/lib/angular-mocks/angular-mocks.js',
+      'bower_components/angular/angular.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-mocks/angular-mocks.js',
 
       // our app code
       'client/app/**/*.js',
@@ -28,7 +28,7 @@ module.exports = function (config) {
     ],
 
     // test results reporter to use
-   reporters: ['progress', 'cardboard'],
+    reporters: ['progress', 'cardboard'],
 
     // start these browsers. PhantomJS will load up in the background
     browsers: ['PhantomJS'],
