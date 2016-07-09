@@ -2,12 +2,12 @@ angular.module('shortly.services', [])
 
 .factory('Links', function ($http) {
   var getAll = function() {
+    console.log('getting all links');
     return $http({
       method: 'GET',
       url: '/api/links',
     })
     .then(function(resp) {
-      // resp.send(200);
       return resp.data;
     });
   };
@@ -65,7 +65,6 @@ angular.module('shortly.services', [])
     $window.localStorage.removeItem('com.shortly');
     $location.path('/signin');
   };
-
 
   return {
     signin: signin,
