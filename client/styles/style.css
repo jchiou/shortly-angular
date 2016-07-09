@@ -56,7 +56,7 @@ h1 {
 .link {
   clear: both;
   margin-bottom: 5px;
-  padding: 5px;
+  padding: 10px 0 0 20px;
   min-height: 50px;
 }
 
@@ -113,7 +113,6 @@ input[type=url]:focus {
   outline: none;
 }
 
-
 .error {
   border: red solid 4px;
   padding: 10px;
@@ -153,5 +152,9 @@ input[type=url]:focus {
 .title {
   font-weight: : 700;
   font-size: 20px;
+}
+
+.search {
+  margin-left: 20px;
 }
 

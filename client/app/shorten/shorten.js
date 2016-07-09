@@ -6,6 +6,7 @@ angular.module('shortly.shorten', ['shortly.services'])
     Links.addOne($scope.link)
     .then(function(newLink) {
       $scope.link.code = newLink;
+      $scope.link.url = '';
     });
   };
 });

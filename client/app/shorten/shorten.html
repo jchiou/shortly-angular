@@ -5,7 +5,9 @@
     <input type='submit' value='Shorten'>
   </form>
 
-   <div class='message'>{{ link.code }}</div>
+  <div class='link'>
+    <a href='{{ link.code }}' target='new'>{{ link.code }}</a>
+  </div>
 
 </div>
 

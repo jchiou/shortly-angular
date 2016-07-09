@@ -1,6 +1,7 @@
 <div id='container'>
-  <!-- Your html here -->
-  <div class='link' ng-repeat='link in data.links'>
+  <label>Search: <input class='search' ng-model='searchText'></label>
+  <div class='link' ng-repeat='link in data.links | filter:searchText | orderBy:"visits":true'>
+    <div class='visits'><span class='count'>{{ link.visits }}</span>Visits</div>
     <div class='title'>{{ link.title }}</div>
     <div class='url'>{{ link.url }}</div>
     <a href='{{ link.baseUrl }}/{{ link.code }}' target='new'>{{ link.baseUrl }}/{{ link.code }}</a>
