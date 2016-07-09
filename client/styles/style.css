@@ -146,3 +146,12 @@ input[type=url]:focus {
   clear: both;
 }
 
+.url {
+  font-size: 14px;
+}
+
+.title {
+  font-weight: : 700;
+  font-size: 20px;
+}
+

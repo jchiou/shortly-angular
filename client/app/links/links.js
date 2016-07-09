@@ -6,5 +6,6 @@ angular.module('shortly.links', ['shortly.services'])
  
   Links.getAll().then(function(linksArray) {
     $scope.data.links = linksArray;
+    console.log($scope.data.links);
   });
 });

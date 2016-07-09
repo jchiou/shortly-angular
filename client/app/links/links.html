@@ -1,13 +1,8 @@
 <div id='container'>
   <!-- Your html here -->
-
-  <p>Links page</p>
-
-  <!-- 
-  Need to loop through all links and render
-
-  <div>
-    controller: {{book.name}}<br />
-    Book Id: {{book.params.bookId}}<br />
-  </div> -->
+  <div class='link' ng-repeat='link in data.links'>
+    <div class='title'>{{ link.title }}</div>
+    <div class='url'>{{ link.url }}</div>
+    <a href='{{ link.baseUrl }}/{{ link.code }}' target='new'>{{ link.baseUrl }}/{{ link.code }}</a>
+  </div>
 </div>
